@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>home</div>
+  <div>404</div>
 </template>
 
 <style scoped></style>

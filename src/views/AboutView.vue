@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { storeToRefs } from 'pinia'
-import { useCounterStore } from '@/stores/counter'
+import { storeToRefs } from "pinia";
+import { useCounterStore } from "@/stores/counter";
 
-const { count, doubleCount } = storeToRefs(useCounterStore())
-const { increment } = useCounterStore()
+const { count, doubleCount } = storeToRefs(useCounterStore());
+const { increment } = useCounterStore();
 const handleClick = () => {
-  increment()
-}
+  increment();
+};
 </script>
 
 <template>
@@ -15,7 +15,7 @@ const handleClick = () => {
   <div class="about" @click="handleClick">+</div>
 </template>
 
-<style>
+<style scoped>
 @media (min-width: 1024px) {
   .about {
     display: flex;
